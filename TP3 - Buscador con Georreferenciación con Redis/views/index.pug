@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet" href="estilo.css")
+    title= pageTitle
+  body
+    h1 Buscador de Universidades
+    form(action="/" method="post")
+      div 
+      
+        label(for="#longitude") Longitud  
+        input#longitude(type="text" name="longitude" value= longitude)
+          
+        label(for="#latitude") Latitud 
+        input#latitude(type="text" name="latitude" value= latitude)
+
+      button(type="submit") Buscar
+    
+    //- Resultados
+    if results
+      h2 Resultados obtenidos con Latitud: #{latitude} y Longitud: #{longitude}
+      
+      each result in results
+        div
+          h3 
+            strong Universidad: 
+            | #{result.key}.
+          div
+            strong Distancia: 
+            | #{result.distance}
+            |  millas.
+          div
+            strong Coordinadas: 
+            | #{result.latitude}
+            | , 
+            | #{result.longitude}.
+            

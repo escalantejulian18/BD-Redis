@@ -1,0 +1,10 @@
+{
+  "name": "redis_nodejs",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies" : {
+    "my_test": "^3.1.0"
+  }
+}
