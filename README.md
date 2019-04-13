@@ -1,2 +1,2 @@
 # BD-Redis
-Interacción de Redis
+Interacción con la base de datos NSQL Redis
